@@ -61,6 +61,9 @@ public class ControllerTable implements Initializable {
         // get all data from database
         getList(MongoDB.findAllItems());
 
+        // make table columns auto resizable
+        setTableAutoResizeColumns();
+
         // call the setTable method
         setTable();
     }
@@ -191,5 +194,17 @@ public class ControllerTable implements Initializable {
 
         // call the setTable method
         setTable();
+    }
+
+    private void setTableAutoResizeColumns() {
+        id.prefWidthProperty().bind(table.widthProperty().divide(18));
+        firstname.prefWidthProperty().bind(table.widthProperty().divide(9));
+        lastname.prefWidthProperty().bind(table.widthProperty().divide(9));
+        birthday.prefWidthProperty().bind(table.widthProperty().divide(9));
+        street.prefWidthProperty().bind(table.widthProperty().divide(6));
+        houseNr.prefWidthProperty().bind(table.widthProperty().divide(18));
+        postCode.prefWidthProperty().bind(table.widthProperty().divide(9));
+        city.prefWidthProperty().bind(table.widthProperty().divide(9));
+        email.prefWidthProperty().bind(table.widthProperty().divide(7));
     }
 }

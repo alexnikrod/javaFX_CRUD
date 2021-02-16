@@ -11,7 +11,7 @@
 
 <AnchorPane fx:id="persons" prefHeight="487.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.crud.ControllerTable">
    <children>
-      <TableView fx:id="table" layoutX="27.0" layoutY="80.0" prefHeight="293.0" prefWidth="1066.0">
+      <TableView fx:id="table" layoutX="27.0" layoutY="80.0" prefHeight="293.0" prefWidth="1066.0" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="80.0">
         <columns>
           <TableColumn fx:id="id" prefWidth="40.0" text="Id" />
           <TableColumn fx:id="firstname" editable="true" minWidth="50.0" prefWidth="154.0" text="Vorname" />
@@ -24,7 +24,7 @@
             <TableColumn fx:id="email" editable="true" prefWidth="160.0" text="E-mail" />
         </columns>
       </TableView>
-       <Button fx:id="addNew" layoutX="27.0" layoutY="409.0" mnemonicParsing="false" onAction="#addPerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #2169bc;" text="+ Eintrag hinzufügen" textAlignment="CENTER" textFill="WHITE">
+       <Button fx:id="addNew" layoutX="27.0" layoutY="409.0" mnemonicParsing="false" onAction="#addPerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #2169bc;" text="+ Eintrag hinzufügen" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="27.0">
            <font>
                <Font name="System Bold" size="18.0" />
            </font>
@@ -32,7 +32,7 @@
                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
            </padding>
        </Button>
-       <Button layoutX="409.0" layoutY="409.0" mnemonicParsing="false" onAction="#editPerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #ffc107;" text="Bearbeiten" textAlignment="CENTER" textFill="WHITE">
+       <Button layoutX="409.0" layoutY="409.0" mnemonicParsing="false" onAction="#editPerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #ffc107;" text="Bearbeiten" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="409.0">
            <font>
                <Font name="System Bold" size="18.0" />
            </font>
@@ -40,7 +40,7 @@
                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
            </padding>
        </Button>
-       <Button layoutX="790.0" layoutY="409.0" mnemonicParsing="false" onAction="#deletePerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #eb2020;" text="Löschen" textAlignment="CENTER" textFill="WHITE">
+       <Button layoutX="790.0" layoutY="409.0" mnemonicParsing="false" onAction="#deletePerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #eb2020;" text="Löschen" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="790.0">
            <font>
                <Font name="System Bold" size="18.0" />
            </font>
@@ -48,12 +48,12 @@
                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
            </padding>
        </Button>
-      <Label fx:id="status" layoutX="27.0" layoutY="373.0" prefHeight="27.0" prefWidth="249.0" textFill="#eb2020">
+      <Label fx:id="status" layoutX="27.0" layoutY="377.0" prefHeight="27.0" prefWidth="249.0" textFill="#eb2020" AnchorPane.bottomAnchor="83.0">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="refresh" layoutX="956.0" layoutY="18.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="37.0" prefWidth="137.0" text="Aktualisieren" />
+      <Button fx:id="refresh" layoutX="956.0" layoutY="18.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="37.0" prefWidth="137.0" text="Aktualisieren" AnchorPane.rightAnchor="26.0" />
       <Text layoutX="27.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personendatenbank">
          <font>
             <Font size="36.0" />
