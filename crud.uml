@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.javafx.crud</OriginalElement>
+  <nodes>
+    <node x="626.0" y="0.0">com.javafx.crud.ControllerForm</node>
+    <node x="667.0" y="594.0">com.javafx.crud.Main</node>
+    <node x="313.0" y="0.0">com.javafx.crud.ControllerTable</node>
+    <node x="312.0" y="590.0">com.javafx.crud.MongoDB</node>
+    <node x="0.0" y="0.0">com.javafx.crud.Persons</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="326.5" y="423.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

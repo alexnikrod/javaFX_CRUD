@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="persons" prefHeight="487.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.crud.ControllerTable">
+   <children>
+      <TableView fx:id="table" layoutX="27.0" layoutY="80.0" prefHeight="293.0" prefWidth="1066.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="40.0" text="Id" />
+          <TableColumn fx:id="firstname" editable="true" minWidth="50.0" prefWidth="154.0" text="Vorname" />
+            <TableColumn fx:id="lastname" editable="true" prefWidth="126.0" text="Name" />
+            <TableColumn fx:id="birthday" prefWidth="107.0" text="Geburtsdatum" />
+            <TableColumn fx:id="street" editable="true" prefWidth="147.0" text="Strasse" />
+            <TableColumn fx:id="houseNr" editable="true" prefWidth="82.0" text="Haus Nr." />
+            <TableColumn fx:id="postCode" prefWidth="105.0" text="Plz" />
+            <TableColumn fx:id="city" editable="true" prefWidth="143.0" text="Ort" />
+            <TableColumn fx:id="email" editable="true" prefWidth="160.0" text="E-mail" />
+        </columns>
+      </TableView>
+       <Button fx:id="addNew" layoutX="27.0" layoutY="409.0" mnemonicParsing="false" onAction="#addPerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #2169bc;" text="+ Eintrag hinzufügen" textAlignment="CENTER" textFill="WHITE">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+           <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </padding>
+       </Button>
+       <Button layoutX="409.0" layoutY="409.0" mnemonicParsing="false" onAction="#editPerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #ffc107;" text="Bearbeiten" textAlignment="CENTER" textFill="WHITE">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+           <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </padding>
+       </Button>
+       <Button layoutX="790.0" layoutY="409.0" mnemonicParsing="false" onAction="#deletePerson" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: #eb2020;" text="Löschen" textAlignment="CENTER" textFill="WHITE">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+           <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </padding>
+       </Button>
+      <Label fx:id="status" layoutX="27.0" layoutY="373.0" prefHeight="27.0" prefWidth="249.0" textFill="#eb2020">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="refresh" layoutX="956.0" layoutY="18.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="37.0" prefWidth="137.0" text="Aktualisieren" />
+      <Text layoutX="27.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personendatenbank">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
