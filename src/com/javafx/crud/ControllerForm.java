@@ -71,10 +71,6 @@ public class ControllerForm implements Initializable {
                 if (!isEdit) {
                     // save the document into database collection
                     MongoDB.mongoCollection.insertOne(doc);
-                    // get the current window
-                    // Stage stage = (Stage) add.getScene().getWindow();
-                    // close the current window
-                    //stage.close();
 
                 } else {
                     // update the document in database

@@ -31,13 +31,6 @@ public class MongoDB {
 
         // create a collection
         mongoCollection = mongoDatabase.getCollection("Persons");
-
-
-
-
-
-
-
     }
 
     public static MongoCursor<Document> findAllItems() {
